@@ -8,7 +8,9 @@ $(function() {
 		properties.email = $("#inputEmail1").val();
 
 		// post request to write to the database
-		$.post(url,properties,functionToExecute);
+		// $.post(url,properties,function(data){
+		// 	$('#myModal').show();
+		// });
 
 		console.log(properties);
 
@@ -32,7 +34,9 @@ $(function() {
 
 
 		// post request to write to the database
-		$.post(url,properties,functionToExecute);
+		$.post(url,properties,function(data){
+			$('#myModal').show();
+		});
 
 		console.log(properties);
 
@@ -45,7 +49,7 @@ $(function() {
 $(function() {
 	$('#addFeedbackBtn1').click(function() {
 		var properties = {};
-		properties.name = $("#inputName2").val();
+		properties.name = $("#inputName3").val();
 		properties.date = $("#inputDate1").val();
 		properties.rating = $("#inputRating").val();
 		properties.comment = $("#inputComment1").val();
@@ -196,4 +200,3 @@ $(function() {
 	});
 	
 });
-
