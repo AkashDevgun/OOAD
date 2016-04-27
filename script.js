@@ -508,6 +508,7 @@ $(function() {
 		properties.bio = data.bio;
 		properties.notes = data.notes;
 		properties.photo = data.photo;
+		//Done
 
 		$.post(url,properties,functionToExecute);
 
